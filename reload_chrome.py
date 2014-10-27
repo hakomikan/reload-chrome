@@ -8,7 +8,7 @@ def iterate_tabs():
     for x in chromeShell.get_tabs():
         if ("chrome-extension:" in x["url"] or
             "chrome-devtools:" in x["url"]):
-            break
+            continue
         yield x
 
 
